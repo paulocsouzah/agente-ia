@@ -242,7 +242,7 @@ function renderResultado(resultado) {
       "${escapeHtml(resultado.acaoProposta)}"
     </div>
     <form method="POST" action="/aprovar">
-      <input type="hidden" name="estado" value='${escapeHtml(estado)}' />
+      <input type="hidden" name="estado" value="${escapeHtml(estado)}" />
       <button type="submit" name="decisao" value="aprovar">✅ Aprovar</button>
       <button type="submit" name="decisao" value="rejeitar">❌ Rejeitar</button>
     </form>
